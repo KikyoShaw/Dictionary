@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/Dictionary">
+        <file>qrc/ico_gb.png</file>
+        <file>qrc/ico_max.png</file>
+        <file>qrc/ico_min.png</file>
+    </qresource>
+</RCC>
