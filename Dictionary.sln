@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.28307.1525
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dictionary", "Dictionary\Dictionary.vcxproj", "{339F0996-E99E-4FDD-9A88-53EE9B5A0645}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dictionary-reborn", "D:\Desktop\shaw\dictionary-reborn-master\dictionary-reborn.vcxproj", "{27A47492-D85B-3E2E-B73A-1D0200F9CC77}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -17,10 +15,6 @@ Global
 		{339F0996-E99E-4FDD-9A88-53EE9B5A0645}.Debug|x86.Build.0 = Debug|Win32
 		{339F0996-E99E-4FDD-9A88-53EE9B5A0645}.Release|x86.ActiveCfg = Release|Win32
 		{339F0996-E99E-4FDD-9A88-53EE9B5A0645}.Release|x86.Build.0 = Release|Win32
-		{27A47492-D85B-3E2E-B73A-1D0200F9CC77}.Debug|x86.ActiveCfg = Debug|Win32
-		{27A47492-D85B-3E2E-B73A-1D0200F9CC77}.Debug|x86.Build.0 = Debug|Win32
-		{27A47492-D85B-3E2E-B73A-1D0200F9CC77}.Release|x86.ActiveCfg = Release|Win32
-		{27A47492-D85B-3E2E-B73A-1D0200F9CC77}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
