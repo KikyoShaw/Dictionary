@@ -5,6 +5,7 @@
 #include <QJsonObject>
 #include <QPixmap>
 #include <QPainter>
+#include <QNetworkConfiguration>
 
 APIManager & APIManager::getInstance()
 {
@@ -15,7 +16,8 @@ APIManager & APIManager::getInstance()
 APIManager::APIManager(QObject *parent)
 	:QObject(parent), m_isWorking(false), m_picture(QString())
 {
-	m_netWork = new QNetworkAccessManager(this);
+	m_netWork = new QNetworkAccessManager();
+	m_netWork->activeConfiguration();
 	connect(m_netWork, &QNetworkAccessManager::finished, this, &APIManager::sltRequestFinsh, Qt::DirectConnection);
 }
 
