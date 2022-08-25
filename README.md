@@ -6,3 +6,6 @@
 2.具有中英互译功能
 
 3.每日一句英文学习功能
+
+#### 效果图
+![image](https://github.com/KikyoShaw/Dictionary/blob/master/Image/1.png)
