@@ -92,7 +92,7 @@ void Dictionary::parseDictionaryJson(const QString & json)
 		if (object.contains("translation")) {
 			QJsonValue valueArray = object.value("translation");
 			if (valueArray.isArray()) {
-				for (auto & each : valueArray.toArray()) {
+				for (auto each : valueArray.toArray()) {
 					QString text = each.toString();
 					ui.textEdit_result->append(text);
 				}
@@ -114,7 +114,7 @@ void Dictionary::parseDictionaryJson(const QString & json)
 				if (basicObj.contains("explains")) {
 					QJsonValue explainsValue = basicObj.value("explains");
 					if (explainsValue.isArray()) {
-						for (auto & each : explainsValue.toArray()) {
+						for (auto each : explainsValue.toArray()) {
 							QString text = each.toString();
 							ui.textEdit_result->append(text);
 						}
@@ -148,7 +148,7 @@ void Dictionary::parseTranslateJson(const QString & json)
 		if (object.contains("translation")) {
 			QJsonValue valueArray = object.value("translation");
 			if (valueArray.isArray()) {
-				for (auto & each : valueArray.toArray()) {
+				for (auto each : valueArray.toArray()) {
 					QString text = each.toString();
 					ui.textEdit_result_translate->append(text);
 				}

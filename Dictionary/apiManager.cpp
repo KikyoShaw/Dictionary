@@ -27,9 +27,9 @@ APIManager::~APIManager()
 
 void APIManager::findDictionary(const QString & word)
 {
-	if (m_isWorking)
+	/*if (m_isWorking)
 		return;
-	m_isWorking = true;
+	m_isWorking = true;*/
 	m_workType = E_Dictionary;
 	QString url = QString("http://fanyi.youdao.com/openapi.do?keyfrom=YouDaoCV&key=659600698&type=data&doctype=json&version=1.1" \
 					"&q=%1").arg(word);
@@ -41,9 +41,9 @@ void APIManager::findDictionary(const QString & word)
 
 void APIManager::translate(const QString & text)
 {
-	if (m_isWorking)
+	/*if (m_isWorking)
 		return;
-	m_isWorking = true;
+	m_isWorking = true;*/
 	m_workType = E_Translate;
 	QString url = QString("http://fanyi.youdao.com/openapi.do?keyfrom=YouDaoCV&key=659600698&type=data&doctype=json&version=1.1&only=translate" \
 		"&q=%1").arg(text);
@@ -55,9 +55,9 @@ void APIManager::translate(const QString & text)
 
 void APIManager::getEveryDayText()
 {
-	if (m_isWorking)
+	/*if (m_isWorking)
 		return;
-	m_isWorking = true;
+	m_isWorking = true;*/
 	m_workType = E_EveryDayText;
 	QString url = QString("http://open.iciba.com/dsapi/");
 	QNetworkRequest request;
@@ -70,9 +70,9 @@ void APIManager::downLoadImage(const QString & tts, const QString & picture)
 {
 	if (tts.isEmpty())
 		return;
-	if (m_isWorking)
+	/*if (m_isWorking)
 		return;
-	m_isWorking = true;
+	m_isWorking = true;*/
 	m_picture = picture;
 	m_workType = E_tts;
 	QNetworkRequest request;
@@ -85,9 +85,9 @@ void APIManager::downLoadImage(const QString & picture)
 {
 	if (picture.isEmpty())
 		return;
-	if (m_isWorking)
+	/*if (m_isWorking)
 		return;
-	m_isWorking = true;
+	m_isWorking = true;*/
 	m_workType = E_Picture;
 	QNetworkRequest request;
 	request.setUrl(QUrl(picture));
